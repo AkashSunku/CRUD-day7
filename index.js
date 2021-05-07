@@ -62,7 +62,7 @@ app.post('/students', (req, res) => {
         if (!err)
             rows.forEach(element => {
                 if(element.constructor == Array)
-                res.send('Inserted employee id : '+element[0].EmpID);
+                res.send('Inserted student id : '+element[0].StdID);
             });
         else
             console.log(err);
